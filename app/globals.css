@@ -202,7 +202,8 @@ footer {
 }
 
 .filter-wrapper {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 13px 0px;
 }
 
 .filter-header {
@@ -213,6 +214,7 @@ footer {
 
 .filter-column {
   display: flex;
+  gap: 5px;
   flex-direction: column;
 }
 
@@ -260,4 +262,11 @@ footer {
 
 .main-content {
   border-top: 1px solid #e5e5e5;
+}
+
+.filter-list {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
 }

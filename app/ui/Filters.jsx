@@ -14,12 +14,14 @@ const Filters = ({ showFilter }) => {
     <div className="filter" style={{ display: showFilter ? "block" : "none" }}>
       <div className="filter-wrapper">
         <input type="checkbox" id="customizble" name="customizble" />
-        <label for="customizble">CUSTOMIZBLE</label>
+        <label className="product-bold" for="customizble">
+          CUSTOMIZBLE
+        </label>
       </div>
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(1)}>
           <div className="filter-column">
-            <span>IDEAL FOR</span>
+            <span className="product-bold">IDEAL FOR</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -45,7 +47,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(2)}>
           <div className="filter-column">
-            <span>OCCASION</span>
+            <span className="product-bold">OCCASION</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -71,7 +73,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(3)}>
           <div className="filter-column">
-            <span>WORK</span>
+            <span className="product-bold">WORK</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -97,7 +99,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(4)}>
           <div className="filter-column">
-            <span>FABRIC</span>
+            <span className="product-bold">FABRIC</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -123,7 +125,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(5)}>
           <div className="filter-column">
-            <span>SEGMENT</span>
+            <span className="product-bold">SEGMENT</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -149,7 +151,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(6)}>
           <div className="filter-column">
-            <span>SUITABLE FOR</span>
+            <span className="product-bold">SUITABLE FOR</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -175,7 +177,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(7)}>
           <div className="filter-column">
-            <span>RAW MATERIALS</span>
+            <span className="product-bold">RAW MATERIALS</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
@@ -201,7 +203,7 @@ const Filters = ({ showFilter }) => {
       <div className="filter-wrapper">
         <div className="filter-header" onClick={() => handleClick(8)}>
           <div className="filter-column">
-            <span>PATTERN</span>
+            <span className="product-bold">PATTERN</span>
             <span>All</span>
           </div>
           <Image width={16} height={16} src={"/assets/svgs/arrow-down.svg"} />
