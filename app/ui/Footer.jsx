@@ -16,25 +16,29 @@ const Footer = () => {
         </div>
         <div className="right-footer">
           <h1 className="footer-bold">CONTACT US</h1>
-          <span>+44 221 133 5360</span>
-          <span>customercare@mettamuse.com</span>
-          <h1 className="footer-bold">CURRENCY</h1>
-          <div className="usa-wrapper">
-            <Image
-              src="/assets/svgs/us.svg"
-              alt="usaflag"
-              width={24}
-              height={24}
-            />
-            <Image
-              src="/assets/svgs/star.svg"
-              alt="star"
-              width={6}
-              height={6}
-            />
-            <span>USD</span>
+          <div className="user-contact">
+            <div className="user-cont">+44 221 133 5360</div>
+            <div className="user-cont">customercare@mettamuse.com</div>
           </div>
-          <p style={{ fontSize: "14px" }}>
+          <div>
+            <h1 className="footer-bold currency">CURRENCY</h1>
+            <div className="usa-wrapper">
+              <Image
+                src="/assets/svgs/us.svg"
+                alt="usaflag"
+                width={24}
+                height={24}
+              />
+              <Image
+                src="/assets/svgs/star.svg"
+                alt="star"
+                width={6}
+                height={6}
+              />
+              <span>USD</span>
+            </div>
+          </div>
+          <p className="footer-desc" style={{ fontSize: "14px" }}>
             Transactions will be completed in Euros and a currency reference is
             available on hover.
           </p>
@@ -42,7 +46,15 @@ const Footer = () => {
       </div>
       <div className="down-footer">
         <div className="left-down">
-          <h1 className="footer-bold">mettā muse</h1>
+          <div>
+            <h1 className="footer-bold">mettā muse</h1>
+            <Image
+              width={16}
+              height={16}
+              src="/assets/svgs/arrow-right.svg"
+              alt="arrow-down-white"
+            />
+          </div>
           <ul>
             <li>About Us</li>
             <li>Stories</li>
@@ -52,7 +64,15 @@ const Footer = () => {
           </ul>
         </div>
         <div className="middle-down">
-          <h1 className="footer-bold">QUICK LINKS</h1>
+          <div>
+            <h1 className="footer-bold">QUICK LINKS</h1>
+            <Image
+              width={16}
+              height={16}
+              src="/assets/svgs/arrow-right.svg"
+              alt="arrow-down-white"
+            />
+          </div>
           <ul>
             <li>Orders & Shipping</li>
             <li>Join/Login as a Seller</li>
@@ -64,7 +84,15 @@ const Footer = () => {
           </ul>
         </div>
         <div className="right-down">
-          <h1 className="footer-bold">FOLLOW US</h1>
+          <div>
+            <h1 className="footer-bold">FOLLOW US</h1>
+            <Image
+              width={16}
+              height={16}
+              src="/assets/svgs/arrow-right.svg"
+              alt="arrow-down-white"
+            />
+          </div>
           <div className="social">
             <Image
               src="/assets/svgs/insta.svg"
