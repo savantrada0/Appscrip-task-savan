@@ -505,4 +505,11 @@ input[type="checkbox"] {
   .hide_filter {
     font-size: 12px;
   }
+  .brand > img,
+  .upperdiv > ul > li > img {
+    width: 20px;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }
