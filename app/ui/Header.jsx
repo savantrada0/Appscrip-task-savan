@@ -9,6 +9,13 @@ const Header = () => {
       <div className="upperdiv">
         <div className="brand">
           <Image
+            className="burger"
+            src="/assets/svgs/hamburger.svg"
+            alt="menu"
+            width={36}
+            height={36}
+          />
+          <Image
             src="/assets/svgs/Logo.svg"
             alt="logo"
             width={36}
@@ -41,23 +48,25 @@ const Header = () => {
               alt="bag"
             />
           </li>
-          <li>
-            <Image
-              width={24}
-              height={24}
-              src="/assets/svgs/profile.svg"
-              alt="profile"
-            />
-          </li>
-          <li>
-            <span>ENG</span>
-            <Image
-              width={16}
-              height={16}
-              src="/assets/svgs/arrow-down.svg"
-              alt="arrow-down"
-            />
-          </li>
+          <div className="last-two-icons">
+            <li>
+              <Image
+                width={24}
+                height={24}
+                src="/assets/svgs/profile.svg"
+                alt="profile"
+              />
+            </li>
+            <li>
+              <span>ENG</span>
+              <Image
+                width={16}
+                height={16}
+                src="/assets/svgs/arrow-down.svg"
+                alt="arrow-down"
+              />
+            </li>
+          </div>
         </ul>
       </div>
       <div className="downdiv">

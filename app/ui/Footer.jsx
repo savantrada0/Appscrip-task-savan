@@ -1,6 +1,17 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 const Footer = () => {
+  const [activeFeild, setActiveFeild] = useState(0);
+
+  const handleClick = (index) => {
+    if (activeFeild === index) {
+      setActiveFeild(0);
+    } else {
+      setActiveFeild(index);
+    }
+  };
   return (
     <footer>
       <div className="upper-footer">
@@ -11,7 +22,7 @@ const Footer = () => {
           <span>Sign up for updates from mettā muse.</span>
           <div className="input-wrapper">
             <input type="text" placeholder="Enter your e-mail..." />
-            <button>SUBSCRIBE</button>
+            <button style={{ cursor: "pointer" }}>SUBSCRIBE</button>
           </div>
         </div>
         <div className="right-footer">
@@ -20,7 +31,7 @@ const Footer = () => {
             <div className="user-cont">+44 221 133 5360</div>
             <div className="user-cont">customercare@mettamuse.com</div>
           </div>
-          <div>
+          <div className="currency-wrapper">
             <h1 className="footer-bold currency">CURRENCY</h1>
             <div className="usa-wrapper">
               <Image
@@ -46,34 +57,45 @@ const Footer = () => {
       </div>
       <div className="down-footer">
         <div className="left-down">
-          <div>
+          <div className="services" onClick={() => handleClick(1)}>
             <h1 className="footer-bold">mettā muse</h1>
             <Image
+              className="arrow-white"
               width={16}
               height={16}
               src="/assets/svgs/arrow-right.svg"
               alt="arrow-down-white"
             />
           </div>
-          <ul>
+          <ul className="footer-big">
             <li>About Us</li>
             <li>Stories</li>
             <li>Artisans</li>
             <li>Boutiques</li>
             <li>EU Compliances Docs</li>
           </ul>
+          {activeFeild === 1 && (
+            <ul className="footer-small">
+              <li>About Us</li>
+              <li>Stories</li>
+              <li>Artisans</li>
+              <li>Boutiques</li>
+              <li>EU Compliances Docs</li>
+            </ul>
+          )}
         </div>
         <div className="middle-down">
-          <div>
+          <div className="q_links" onClick={() => handleClick(2)}>
             <h1 className="footer-bold">QUICK LINKS</h1>
             <Image
+              className="arrow-white"
               width={16}
               height={16}
               src="/assets/svgs/arrow-right.svg"
               alt="arrow-down-white"
             />
           </div>
-          <ul>
+          <ul className="footer-big">
             <li>Orders & Shipping</li>
             <li>Join/Login as a Seller</li>
             <li>Payment & Pricing</li>
@@ -82,30 +104,60 @@ const Footer = () => {
             <li>Privacy Policy</li>
             <li>Terms & Conditions</li>
           </ul>
+          {activeFeild === 2 && (
+            <ul className="footer-small">
+              <li>Orders & Shipping</li>
+              <li>Join/Login as a Seller</li>
+              <li>Payment & Pricing</li>
+              <li>Return & Refunds</li>
+              <li>FAQs</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          )}
         </div>
         <div className="right-down">
-          <div>
-            <h1 className="footer-bold">FOLLOW US</h1>
-            <Image
-              width={16}
-              height={16}
-              src="/assets/svgs/arrow-right.svg"
-              alt="arrow-down-white"
-            />
-          </div>
-          <div className="social">
-            <Image
-              src="/assets/svgs/insta.svg"
-              alt="instagram"
-              width={32}
-              height={32}
-            />
-            <Image
-              src="/assets/svgs/linkedin.svg"
-              alt="linkedin"
-              width={32}
-              height={32}
-            />
+          <div className="follow_us">
+            <div className="services" onClick={() => handleClick(3)}>
+              <h1 className="footer-bold">FOLLOW US</h1>
+              <Image
+                className="arrow-white"
+                width={16}
+                height={16}
+                src="/assets/svgs/arrow-right.svg"
+                alt="arrow-down-white"
+              />
+            </div>
+            <div className="social footer-big">
+              <Image
+                src="/assets/svgs/insta.svg"
+                alt="instagram"
+                width={32}
+                height={32}
+              />
+              <Image
+                src="/assets/svgs/linkedin.svg"
+                alt="linkedin"
+                width={32}
+                height={32}
+              />
+            </div>
+            {activeFeild === 3 && (
+              <div className="social footer-small">
+                <Image
+                  src="/assets/svgs/insta.svg"
+                  alt="instagram"
+                  width={32}
+                  height={32}
+                />
+                <Image
+                  src="/assets/svgs/linkedin.svg"
+                  alt="linkedin"
+                  width={32}
+                  height={32}
+                />
+              </div>
+            )}
           </div>
           <h1 className="footer-bold" style={{ marginTop: "32px" }}>
             mettā muse ACCEPTS

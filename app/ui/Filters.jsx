@@ -13,7 +13,12 @@ const Filters = ({ showFilter }) => {
   return (
     <div className="filter" style={{ display: showFilter ? "block" : "none" }}>
       <div className="filter-wrapper">
-        <input type="checkbox" id="customizble" name="customizble" />
+        <input
+          type="checkbox"
+          className="mr-5"
+          id="customizble"
+          name="customizble"
+        />
         <label className="product-bold" for="customizble">
           CUSTOMIZBLE
         </label>
@@ -28,17 +33,17 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 1 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men" name="men" />
+              <input type="checkbox" className="mr-5" id="men" name="men" />
               <label for="men">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women" name="women" />
+              <input type="checkbox" className="mr-5" id="women" name="women" />
               <label for="women">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby" name="baby" />
+              <input type="checkbox" className="mr-5" id="baby" name="baby" />
               <label for="baby">Baby & Kids</label>
             </div>
           </div>
@@ -54,17 +59,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 2 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men1" name="men1" />
+              <input type="checkbox" className="mr-5" id="men1" name="men1" />
               <label for="men1">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women1" name="women1" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women1"
+                name="women1"
+              />
               <label for="women1">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby1" name="baby1" />
+              <input type="checkbox" className="mr-5" id="baby1" name="baby1" />
               <label for="baby1">Baby & Kids</label>
             </div>
           </div>
@@ -80,17 +90,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 3 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men3" name="men3" />
+              <input type="checkbox" className="mr-5" id="men3" name="men3" />
               <label for="men3">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women3" name="women3" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women3"
+                name="women3"
+              />
               <label for="women3">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby3" name="baby3" />
+              <input type="checkbox" className="mr-5" id="baby3" name="baby3" />
               <label for="baby3">Baby & Kids</label>
             </div>
           </div>
@@ -106,17 +121,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 4 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men4" name="men4" />
+              <input type="checkbox" className="mr-5" id="men4" name="men4" />
               <label for="men4">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women4" name="women4" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women4"
+                name="women4"
+              />
               <label for="women4">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby4" name="baby4" />
+              <input type="checkbox" className="mr-5" id="baby4" name="baby4" />
               <label for="baby4">Baby & Kids</label>
             </div>
           </div>
@@ -132,17 +152,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 5 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men5" name="men5" />
+              <input type="checkbox" className="mr-5" id="men5" name="men5" />
               <label for="men5">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women5" name="women5" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women5"
+                name="women5"
+              />
               <label for="women5">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby5" name="baby5" />
+              <input type="checkbox" className="mr-5" id="baby5" name="baby5" />
               <label for="baby5">Baby & Kids</label>
             </div>
           </div>
@@ -158,17 +183,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 6 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men6" name="men6" />
+              <input type="checkbox" className="mr-5" id="men6" name="men6" />
               <label for="men6">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women6" name="women6" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women6"
+                name="women6"
+              />
               <label for="women6">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby6" name="baby6" />
+              <input type="checkbox" className="mr-5" id="baby6" name="baby6" />
               <label for="baby6">Baby & Kids</label>
             </div>
           </div>
@@ -184,17 +214,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 7 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men7" name="men7" />
+              <input type="checkbox" className="mr-5" id="men7" name="men7" />
               <label for="men7">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women7" name="women7" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women7"
+                name="women7"
+              />
               <label for="women7">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby7" name="baby7" />
+              <input type="checkbox" className="mr-5" id="baby7" name="baby7" />
               <label for="baby7">Baby & Kids</label>
             </div>
           </div>
@@ -210,17 +245,22 @@ const Filters = ({ showFilter }) => {
         </div>
         {activeIndex === 8 && (
           <div className="filter-list">
-            <span>Select all</span>
+            <span className="select-all">Select all</span>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="men8" name="men8" />
+              <input type="checkbox" className="mr-5" id="men8" name="men8" />
               <label for="men8">Men</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="women8" name="women8" />
+              <input
+                type="checkbox"
+                className="mr-5"
+                id="women8"
+                name="women8"
+              />
               <label for="women8">Women</label>
             </div>
             <div className="checklist-wrapper">
-              <input type="checkbox" id="baby8" name="baby8" />
+              <input type="checkbox" className="mr-5" id="baby8" name="baby8" />
               <label for="baby8">Baby & Kids</label>
             </div>
           </div>

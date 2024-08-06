@@ -38,22 +38,24 @@ const Products = () => {
     <div className="main-content">
       <div className="filter-content">
         <div className="filter-button">
-          <h1 className="product-bold">3425 ITEMS</h1>
+          <h1 className="items product-bold">3425 ITEMS</h1>
           <span
             onClick={(e) => {
               setShowFilter(!showFilter);
             }}
+            className="hide_filter"
           >
             <Image
               src="/assets/svgs/arrow-left.svg"
               width={16}
               height={16}
               alt="leftarrow"
+              className={`mr-5 ${!showFilter ? "scroll-arrow" : ""}`}
             />
             HIDE FILTERS
           </span>
         </div>
-        <div ref={dropdownRef}>
+        <div ref={dropdownRef} className="right-dropdown">
           <h1 className="product-bold dropdown" onClick={handleToggle}>
             RECOMMENDED
             <Image
@@ -66,11 +68,50 @@ const Products = () => {
           {toggle && (
             <div className="option-wrapper">
               <ul>
-                <li onClick={() => handleOptionClick()}>RECOMMENDED</li>
-                <li>NEWEST FIRST</li>
-                <li>POPULAR</li>
-                <li>PRICE : HIGH TO LOW</li>
-                <li>PRICE : LOW TO HIGH</li>
+                <li
+                  className={`${
+                    selectedOption === "RECOMMENDED" ? "active-toggle" : ""
+                  }`}
+                  onClick={() => handleOptionClick("RECOMMENDED")}
+                >
+                  RECOMMENDED
+                </li>
+                <li
+                  className={`${
+                    selectedOption === "NEWEST FIRST" ? "active-toggle" : ""
+                  }`}
+                  onClick={() => handleOptionClick("NEWEST FIRST")}
+                >
+                  NEWEST FIRST
+                </li>
+                <li
+                  className={`${
+                    selectedOption === "POPULAR" ? "active-toggle" : ""
+                  }`}
+                  onClick={() => handleOptionClick("POPULAR")}
+                >
+                  POPULAR
+                </li>
+                <li
+                  className={`${
+                    selectedOption === "PRICE : HIGH TO LOW"
+                      ? "active-toggle"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionClick("PRICE : HIGH TO LOW")}
+                >
+                  PRICE : HIGH TO LOW
+                </li>
+                <li
+                  className={`${
+                    selectedOption === "PRICE : LOW TO HIGH"
+                      ? "active-toggle"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionClick("PRICE : LOW TO HIGH")}
+                >
+                  PRICE : LOW TO HIGH
+                </li>
               </ul>
             </div>
           )}
