@@ -512,4 +512,22 @@ input[type="checkbox"] {
   .logo {
     font-size: 20px;
   }
+  .brand {
+    width: 84px;
+  }
+  .input-wrapper > input {
+    padding: 8px;
+  }
+  .input-wrapper > button {
+    padding: 8px;
+  }
+  .left-down > ul > li {
+    font-size: 15px;
+  }
+  .middle-down > ul > li {
+    font-size: 15px;
+  }
+  .copy-right {
+    font-size: 12px;
+  }
 }

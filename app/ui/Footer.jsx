@@ -145,7 +145,7 @@ const Footer = () => {
             {activeFeild === 3 && (
               <div className="social footer-small">
                 <Image
-                  src="/assets/svgs/insta.svg"
+                  src="/assets/svgs/Insta.svg"
                   alt="instagram"
                   width={32}
                   height={32}
